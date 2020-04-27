@@ -15,16 +15,16 @@
                 <label for="age">Âge:</label>
                 <input class="form-control" type="number" id="age" placeholder="Âge" required />
             </div>
-            <button onclick="fieldsClone();" class="btn btn-primary">+</button>
+            <button type="button" onclick="fieldsClone()" class="btn btn-primary">+</button>
         </form>
         <script>
             function fieldsClone() {
-                var itm1 = document.getElementById("form").childNodes[1];
-                var itm2 = document.getElementById("form").childNodes[3];
+                var itm1 = document.getElementById('form').childNodes[1];
+                var itm2 = document.getElementById('form').childNodes[3];
                 var cln1 = itm1.cloneNode(true);
                 var cln2 = itm2.cloneNode(true);
-                document.getElementById("form").appendChild(cln1);
-                document.getElementById("form").appendChild(cln2);
+                document.getElementById('form').appendChild(cln1);
+                document.getElementById('form').appendChild(cln2);
             }
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
